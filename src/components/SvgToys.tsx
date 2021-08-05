@@ -1,6 +1,5 @@
 import React from "react"
 import ball from "../images/ball.svg"
-import block from "../images/block.svg"
 import rabbit from "../images/rabbit.svg"
 import rockingHorse from "../images/rocking-horse.svg"
 import rubberDuck from "../images/rubber-duck.svg"

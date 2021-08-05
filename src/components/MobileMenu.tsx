@@ -1,6 +1,5 @@
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import * as React from 'react';
-import {useState} from 'react';
 
 interface IMobileMenu {
     turnOffMenuFunc: any
