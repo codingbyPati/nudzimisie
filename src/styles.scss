@@ -1,0 +1,305 @@
+$color-font:#FFF3C2;
+$btn-color:#fab400;
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.background{
+    background-color: #396BCB;
+    width: 100%;
+    min-height:100vh;
+    z-index:30;
+    
+}
+.width-1440{
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding-top:30px;
+  
+}
+
+.navbar{
+    display: flex;
+    padding-bottom:30px;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links{
+    text-decoration: none;
+    color: $color-font;
+    padding-left: 40px;
+  
+}
+.logo{
+    font-size: 2rem;
+    text-decoration: none;
+    color: $color-font;
+    
+}
+
+
+.footer{
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 1140px;
+    z-index:30;
+    
+  
+}
+
+.banner-box{
+    max-height:150px;
+    width: 800px;
+    margin-left: 20px;
+    margin-right: 20px;
+  
+}
+
+.button{
+    
+    background-color: $btn-color;
+    text-decoration: none;
+    height: 40px;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+
+    
+}
+.btn-box{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top:20px;
+    
+
+}
+
+.r-arrow{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.l-arrow{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.text-box{
+    text-align: center;
+    color: $color-font;
+    margin-top: 30px;
+    position: relative;
+    z-index: 10;
+    margin-left: 30px;
+    margin-right: 30px;
+   
+}
+
+.children-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc((100vh) - (400px));
+}
+
+.content-box{
+    top: 300px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mobile-menu-bg{
+    background-color: #6C7888;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding-bottom: 20px;
+    display: none;
+    margin-top: 28px;
+    position: absolute;
+    z-index: 5;
+}
+.menu-icon{
+    right:0;
+    top:0;
+    width:50px;
+    height:50px;
+    display: none;
+    position: absolute;
+    margin-right: 10px;
+    margin-top: 5px;
+    z-index: 10;
+}
+
+
+
+.mob-menu-bg{
+    position: fixed;
+    width:100vw;
+    height: 60px;
+    background-color:#6C7888;
+    top:0;
+    display: none;
+    color: $color-font;
+   
+}
+
+.mob-menu-logo{
+    display: flex;
+    margin-left: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.mobile-links{
+    text-align: center;
+    text-decoration: none;
+    color: $color-font;
+    line-height: 40px;
+
+}
+
+.toy-animate{
+    animation: myAnim 6s linear 0s infinite normal none;
+    animation-direction: alternate;
+    z-index: 10;
+}
+
+
+
+@keyframes myAnim {
+    0% {
+      animation-timing-function: ease-in;
+      transform: translateY(-45px);
+    }
+    
+    24%{
+        opacity: 0;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateY(-24px);
+      
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateY(-12px);
+     
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateY(-6px);
+     
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateY(-4px);
+      
+    }
+  
+    25%,
+    55%,
+    75%,
+    87% {
+      animation-timing-function: ease-out;
+      transform: translateY(0px);
+      
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      transform: translateY(0px);
+    }
+  }
+
+@media (max-width:1140px){
+    .footer{
+        width: 100%;       
+    }
+
+  
+}
+
+@media (max-width:1070px){
+    .toy-animate{
+        opacity: 0.7;
+    }
+}
+
+@media (max-width:640px){
+    .footer{
+        width: 100%; 
+              
+    }
+
+    .banner-box{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    
+  
+}
+
+@media only screen and (max-width:989px){
+
+    .menu-icon{
+        display: flex;
+    }
+
+    .navbar{
+        display:none;
+    }
+
+    .mob-menu-bg{
+        display: flex;
+        
+    }
+
+    .mobile-menu-bg{
+        display:flex;
+        position: relative;
+
+    }
+
+    .content-box{
+        height: calc((100vh) - (1000px));
+    }
+
+}
+
+
