@@ -9,14 +9,14 @@ import toy from "../images/toy.svg"
 import toys from "../images/toys.svg"
 
 const toysList = [
-    {id: 1, image:ball,top:"100px", left:"2%", right:"unset", width:"80px",animationDelay:"2.5s"},
-    {id: 2, image:rabbit,   top:"250px", left:"4%", right:"unset", width:"80px", animationDelay:"1s"},
-    {id: 3, image:rockingHorse,   top:"400px", left:"2%",right:"unset", width:"80px",animationDelay:"1.5s"},
-    {id: 4, image:rubberDuck,  top:"550px", left:"4%", right:"unset",  width:"80px", animationDelay:"2s"},
-    {id: 5, image:stegosaurus, top:"100px", right:"2%",left:"unset", width:"80px",animationDelay:"1.5s"},
-    {id: 6, image:teddyBear,  top:"250px", right:"4%", left:"unset",  width:"80px", animationDelay:"2s"},
-    {id: 7, image:toy,  top:"400px", right:"2%", left:"unset",  width:"80px",animationDelay:"2.5s"},
-    {id: 8, image:toys,  top:"550px", right:"4%", left:"unset",  width:"80px",animationDelay:"1s"},
+    {id: 1, image:ball,top:"100px", left:"2%", right:"unset", width:"80px",animationDelay:"-2.5s"},
+    {id: 2, image:rabbit,   top:"250px", left:"4%", right:"unset", width:"80px", animationDelay:"-1s"},
+    {id: 3, image:rockingHorse,   top:"400px", left:"2%",right:"unset", width:"80px",animationDelay:"-1.5s"},
+    {id: 4, image:rubberDuck,  top:"550px", left:"4%", right:"unset",  width:"80px", animationDelay:"-2s"},
+    {id: 5, image:stegosaurus, top:"100px", right:"2%",left:"unset", width:"80px",animationDelay:"-1.5s"},
+    {id: 6, image:teddyBear,  top:"250px", right:"4%", left:"unset",  width:"80px", animationDelay:"-2s"},
+    {id: 7, image:toy,  top:"400px", right:"2%", left:"unset",  width:"80px",animationDelay:"-2.5s"},
+    {id: 8, image:toys,  top:"550px", right:"4%", left:"unset",  width:"80px",animationDelay:"-1s"},
     
   ]
 

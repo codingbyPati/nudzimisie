@@ -59,7 +59,7 @@ body{
     position: fixed;
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     width: 1140px;
     z-index:30;
     
@@ -67,10 +67,10 @@ body{
 }
 
 .banner-box{
-    max-height:150px;
-    width: 800px;
-    margin-left: 20px;
-    margin-right: 20px;
+    max-height:100px;
+    width: 1140px;
+    margin-left: 10px;
+    margin-right: 10px;
   
 }
 
@@ -175,7 +175,7 @@ body{
 .mob-menu-logo{
     display: flex;
     margin-left: 20px;
-    color: white;
+    color: $color-font;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -260,20 +260,7 @@ body{
     }
 }
 
-@media (max-width:640px){
-    .footer{
-        width: 100%; 
-              
-    }
 
-    .banner-box{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    
-  
-}
 
 @media only screen and (max-width:989px){
 
@@ -292,7 +279,9 @@ body{
 
     .mobile-menu-bg{
         display:flex;
-        position: relative;
+        position: fixed;
+        width: 100%;
+        z-index:200;
 
     }
 
