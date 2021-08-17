@@ -2,15 +2,6 @@ import React, {PropsWithChildren} from "react"
 import "../styles.scss";
 import banner from "../images/banner.jpg";
 import Navbar from "../components/Navbar"
-import ball from "../images/ball.svg"
-import block from "../images/block.svg"
-import rabbit from "../images/rabbit.svg"
-import rockingHorse from "../images/rocking-horse.svg"
-import rubberDuck from "../images/rubber-duck.svg"
-import stegosaurus from "../images/stegosaurus.svg"
-import teddyBear from "../images/teddy-bear.svg"
-import toy from "../images/toy.svg"
-import toys from "../images/toys.svg"
 import ToysAnimation from "../components/SvgToys"
 
 

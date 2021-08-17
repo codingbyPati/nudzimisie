@@ -1,6 +1,9 @@
 $color-font:#FFF3C2;
 $btn-color:#fab400;
 
+:root {
+    --mainColor: #ff9800;
+  }
 
 body{
     margin: 0;
@@ -43,9 +46,26 @@ body{
 .navbar-links{
     text-decoration: none;
     color: $color-font;
-    padding-left: 40px;
-  
+    margin-left: 20px;
+    margin-right: 20px;
+    background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+    background-position: 0% 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    transition: background-size 1s;
 }
+
+
+
+.navbar-links:hover{
+    background-size: 4px 50px;
+}
+
+
 .logo{
     font-size: 2rem;
     text-decoration: none;
@@ -86,8 +106,44 @@ body{
     align-items: center;
     border-radius: 10px;
     color: white;
-    
+    z-index:1;
+    border-radius: 10rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    border: solid 1px white;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $btn-color;
+        border-radius: 10rem;
+        z-index: -2;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: darken($btn-color, 5%);
+        transition: all .3s;
+        border-radius: 10rem;
+        z-index: -1;
+      }
+      &:hover {
+        border: solid 1px;
+        &:before {
+          width: 100%;
+        }
+      }
 }
+    
+
 .btn-box{
     display: flex;
     justify-content: center;
@@ -124,7 +180,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc((100vh) - (400px));
+    height: calc((100vh) - (300px));
 }
 
 .content-box{
@@ -139,12 +195,21 @@ body{
     flex-direction: column;
     display: flex;
     justify-content: center;
-    justify-items: center;
+    align-items: center;
     padding-bottom: 20px;
     display: none;
     margin-top: 28px;
     position: absolute;
-    z-index: 5;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.transform-0{
+    transform: translateY(-400px);
+}
+
+.transform-1{
+    transform:translateY(0px);
 }
 .menu-icon{
     right:0;
@@ -156,6 +221,8 @@ body{
     margin-right: 10px;
     margin-top: 5px;
     z-index: 10;
+    
+    
 }
 
 
@@ -168,30 +235,72 @@ body{
     top:0;
     display: none;
     color: $color-font;
-   
+    z-index:9;
 }
 
 .mob-menu-logo{
     display: flex;
-    margin-left: 20px;
+    margin-left: 15px;
     color: $color-font;
     justify-content: center;
     align-items: center;
     align-content: center;
+    font-size:25px;
 }
+
+.links-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    width: 100px;
+}
+
+
 
 .mobile-links{
     text-align: center;
     text-decoration: none;
     color: $color-font;
     line-height: 40px;
+    background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+    background-position: 0% 100%;
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+    transition: background-size 0.5s;
+    width: 100px;
+}
 
+.mobile-links:hover{
+    background-size: 2px 50px;
 }
 
 .toy-animate{
     animation: myAnim 6s linear 0s infinite normal none;
     animation-direction: alternate;
     z-index: 10;
+}
+
+.play-container{
+    color: $color-font;
+    text-align: center;
+}
+
+.title-play{
+    margin-bottom: 20px;
+}
+
+.description-play{
+    margin-bottom: 20px;
+}
+
+.list-play{
+    margin-bottom:20px;
 }
 
 
@@ -280,14 +389,33 @@ body{
         display:flex;
         position: fixed;
         width: 100%;
-        z-index:200;
+        z-index:100;
 
     }
 
     .content-box{
         height: calc((100vh) - (1000px));
+        
     }
 
+   
+
 }
+
+@media only screen and (max-width:376px){
+
+
+    .content-box{
+        height: calc((100vh) - (500px));
+        
+    }
+
+   
+
+}
+
+
+
+
 
 

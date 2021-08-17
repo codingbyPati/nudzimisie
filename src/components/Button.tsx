@@ -18,20 +18,6 @@ const Button =(props:PropsWithChildren<IButtonProps>) =>{
             className="button" to="/">
             Losuj
         </AnchorLink>} 
-        
-        {type === 'next' &&
-       <AnchorLink
-            className="button" to="/">
-            Następny
-            <img src={RightArrow} className="r-arrow"></img>
-        </AnchorLink>}
-     
-        {type === 'previous' &&
-        <AnchorLink 
-            className="button " to="/">
-            <img src={LeftArrow} className="l-arrow"></img>
-            Poprzedni
-        </AnchorLink>}
         </div>
      
 

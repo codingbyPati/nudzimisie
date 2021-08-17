@@ -56,7 +56,7 @@ const Navbar = ()=>{
               <img className="menu-icon" src={menuActive ? Close : MenuIcon} />
                   
         </div>
-            {menuActive && <MobileMenu turnOffMenuFunc={toggleMenu} /> }
+            <MobileMenu turnOffMenuFunc={toggleMenu} menuActive={menuActive}/> 
         
 
 
